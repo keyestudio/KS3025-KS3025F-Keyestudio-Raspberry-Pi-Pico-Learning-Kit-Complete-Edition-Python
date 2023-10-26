@@ -2,18 +2,9 @@
 
 1.  **Introduction**
 
-Infrared remote control is a low-cost, easy-to-use wireless
-communication technology. IR light is very similar to visible light,
-except that it has a slightly longer wavelength. This means that
-infrared rays cannot be detected by the human eye, which is perfect for
-wireless communication. For example, when you press a button on the TV
-remote control, an infrared LED will switch on and off repeatedly at a
-frequency of 38,000 times per second, sending information (such as
-volume or channel control) to the infrared sensor on the TV.
+Infrared remote control is a low-cost, easy-to-use wireless communication technology. IR light is very similar to visible light, except that it has a slightly longer wavelength. This means that infrared rays cannot be detected by the human eye, which is perfect for wireless communication. For example, when you press a button on the TV remote control, an infrared LED will switch on and off repeatedly at a frequency of 38,000 times per second, sending information (such as volume or channel control) to the infrared sensor on the TV.
 
-We will first explain how common IR communication protocols work. Then
-we will start this project with a remote control and an IR receiving
-component.
+We will first explain how common IR communication protocols work. Then we will start this project with a remote control and an IR receiving component.
 
 2.  **Components Required**
 
@@ -58,27 +49,16 @@ component.
 
 3.  **Component Knowledge**
 
-**IR Remote Controller**: It is a device that has a certain number of
-buttons. Pressing different buttons causes the infrared transmitter
-tubes at the front of the remote control to send infrared signals in
-different codes. Infrared remote control technology is widely used, such
-as TV, air conditioner and so on. Therefore, in today's technologically
-advanced society, the infrared remote control technology makes it very
-convenient for us to change TV programs and adjust the temperature of
-the air conditioner.  
+**IR Remote Controller**: It is a device that has a certain number of buttons. Pressing different buttons causes the infrared transmitter tubes at the front of the remote control to send infrared signals in different codes. Infrared remote control technology is widely used, such as TV, air conditioner and so on. Therefore, in today's technologically advanced society, the infrared remote control technology makes it very convenient for us to change TV programs and adjust the temperature of the air conditioner.  
 
 The remote control we used is as follows:
 
-The infrared remote controller adopts NEC code and the signal cycle is
-110ms.
+The infrared remote controller adopts NEC code and the signal cycle is 110ms.
 
 ![](/media/3c9d76cb0d24d9861811ce2cb0bb6ae4.png)
 
-**IR Receiver:** It is a component that can receive infrared light,
-which can be used to detect the infrared signal sent by the infrared
-remote control. The infrared signal received by the infrared receiver
-demodulation can be converted back to binary, then the information will
-be passed to a microcontroller.
+**IR Receiver:** It is a component that can receive infrared light, which can be used to detect the infrared signal sent by the infrared
+remote control. The infrared signal received by the infrared receiver demodulation can be converted back to binary, then the information will be passed to a microcontroller.
 
 **Process Diagram：**
 
@@ -88,16 +68,11 @@ be passed to a microcontroller.
 
 **NEC Protocol**
 
-To my knowledge the protocol I describe here was developed by NEC (Now
-Renesas). I've seen very similar protocol descriptions on the internet,
-and there the protocol is called Japanese Format.
+To my knowledge the protocol I describe here was developed by NEC (Now Renesas). I've seen very similar protocol descriptions on the internet, and there the protocol is called Japanese Format.
 
-I do admit that I don't know exactly who developed it. What I do know is
-that it was used in my late VCR produced by Sanyo and was marketed under
-the name of Fisher. NEC manufactured the remote control IC.
+I do admit that I don't know exactly who developed it. What I do know is that it was used in my late VCR produced by Sanyo and was marketed under the name of Fisher. NEC manufactured the remote control IC.
 
-This description was taken from my VCR's service manual. Those were the
-days, when service manuals were filled with useful information\!
+This description was taken from my VCR's service manual. Those were the days, when service manuals were filled with useful information\!
 
 **Features**
 
@@ -117,83 +92,48 @@ Bit time of 1.125ms or 2.25ms.
 
 ![](/media/da33571c6f0afb94b1ec1d91caba3edb.png)
 
-The NEC protocol uses pulse distance encoding of the bits. Each pulse is
-a 560µs long 38kHz carrier burst (about 21 cycles). A logical "1" takes
-2.25ms to transmit, while a logical "0" is only half of that, being
-1.125ms. The recommended carrier duty-cycle is 1/4 or 1/3
+The NEC protocol uses pulse distance encoding of the bits. Each pulse is a 560µs long 38kHz carrier burst (about 21 cycles). A logical "1" takes 2.25ms to transmit, while a logical "0" is only half of that, being 1.125ms. The recommended carrier duty-cycle is 1/4 or 1/3
 
 **Protocol**
 
 ![](/media/f970404e7bbfb5711fea5c776f689f3a.png)
 
-The picture above shows a typical pulse train of the NEC protocol. With
-this protocol the LSB is transmitted first. In this case Address $59 and
-Command $16 is transmitted. A message is started by a 9ms AGC burst,
-which was used to set the gain of the earlier IR receivers. This AGC
-burst is then followed by a 4.5ms space, which is then followed by the
-Address and Command. Address and Command are transmitted twice. The
-second time all bits are inverted and can be used for verification of
-the received message. The total transmission time is constant because
-every bit is repeated with its inverted length. If you're not interested
-in this reliability you can ignore the inverted values, or you can
-expand the Address and Command to 16 bits each\!
+The picture above shows a typical pulse train of the NEC protocol. With this protocol the LSB is transmitted first. In this case Address $59 and Command $16 is transmitted. A message is started by a 9ms AGC burst, which was used to set the gain of the earlier IR receivers. This AGC burst is then followed by a 4.5ms space, which is then followed by the Address and Command. 
 
-Keep in mind that one extra 560µs burst has to follow at the end of the
-message in order to be able to determine the value of the last bit.
+Address and Command are transmitted twice. The second time all bits are inverted and can be used for verification of
+the received message. The total transmission time is constant because every bit is repeated with its inverted length. If you're not interested in this reliability you can ignore the inverted values, or you can expand the Address and Command to 16 bits each\!
+
+Keep in mind that one extra 560µs burst has to follow at the end of the message in order to be able to determine the value of the last bit.
 
 ![](/media/63364daf21e5522c64eb8dfa82f2cef2.png)
 
-A command is transmitted only once, even when the key on the remote
-control remains pressed. Every 110ms a repeat code is transmitted for as
-long as the key remains down. This repeat code is simply a 9ms AGC pulse
-followed by a 2.25ms space and a 560µs burst.
+A command is transmitted only once, even when the key on the remote control remains pressed. Every 110ms a repeat code is transmitted for as long as the key remains down. This repeat code is simply a 9ms AGC pulse followed by a 2.25ms space and a 560µs burst.
 
 ![](/media/afea92a3b5cc1aa2457d2b118b157c84.png)
 
 **Extended NEC protocol**
 
-The NEC protocol is so widely used that soon all possible addresses were
-used up. By sacrificing the address redundancy the address range was
-extended from 256 possible values to approximately 65000 different
-values. This way the address range was extended from 8 bits to 16 bits
-without changing any other property of the protocol.
+The NEC protocol is so widely used that soon all possible addresses were used up. By sacrificing the address redundancy the address range was extended from 256 possible values to approximately 65000 different values. This way the address range was extended from 8 bits to 16 bits without changing any other property of the protocol.
 
-By extending the address range this way the total message time is no
-longer constant. It now depends on the total number of 1's and 0's in
-the message. If you want to keep the total message time constant you'll
-have to make sure the number 1's in the address field is 8 (it
-automatically means that the number of 0's is also 8). This will reduce
-the maximum number of different addresses to just about 13000.
+By extending the address range this way the total message time is no longer constant. It now depends on the total number of 1's and 0's in the message. If you want to keep the total message time constant you'll have to make sure the number 1's in the address field is 8 (it automatically means that the number of 0's is also 8). This will reduce the maximum number of different addresses to just about 13000.
 
-The command redundancy is still preserved. Therefore each address can
-still handle 256 different commands.
+The command redundancy is still preserved. Therefore each address can still handle 256 different commands.
 
 ![](/media/2f78d1ce7f001926f6b90ad966796e91.png)
 
-Keep in mind that 256 address values of the extended protocol are
-invalid because they are in fact normal NEC protocol addresses. Whenever
-the low byte is the exact inverse of the high byte it is not a valid
-extended address.
+Keep in mind that 256 address values of the extended protocol are invalid because they are in fact normal NEC protocol addresses. Whenever the low byte is the exact inverse of the high byte it is not a valid extended address.
 
 4.  **Decode Infrared Signal:**
     
-    We connect the infrared receiving element to the Raspberry Pi Pico
-    according to the wiring diagram below.  
+    We connect the infrared receiving element to the Raspberry Pi Pico according to the wiring diagram below.  
 
 ![](/media/240a9b2efcdd0c0e7099ec5b69beaca6.png)
 
 ![](/media/a6a7f74730669dfa0272e9b5e88ac41e.png)
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 31：IR Control Sound and
-LED. You can move the code to anywhere, for example, we can save the
-code in the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 31：IR Control Sound and LED. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-31：IR Control Sound and LED”. Select“irrecvdata.py”， right-click and
-select“Upload to /”,waiting for the“irrecvdata.py”to be uploaded to the
-Raspberry Pi Pico. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 31：IR Control Sound and LED”. Select“irrecvdata.py”， right-click and select“Upload to /”,waiting for the“irrecvdata.py”to be uploaded to the Raspberry Pi Pico. And double left-click
 the“Project\_31.1\_Decoded\_IR\_Signal.py”.
 
 ![](/media/625d2d78fea3b176c4dcfbf273f57610.png)
@@ -219,16 +159,11 @@ the“Project\_31.1\_Decoded\_IR\_Signal.py”.
 </tbody>
 </table>
 
-Ensure that the Raspberry Pi Pico is connected to the
-computer，click“Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
 
 ![](/media/a3d34b1bbed0ab85259abd10273e982a.png)
 
-Click “Run current script”, the code starts executing, we will see that
-aim the infrared remote control transmitter at the infrared receiving
-head, press the button on the infrared controller, and the "Shell"
-window of Thonny IDE will print the current received key code values.
-Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+Click “Run current script”, the code starts executing, we will see that aim the infrared remote control transmitter at the infrared receiving head, press the button on the infrared controller, and the "Shell" window of Thonny IDE will print the current received key code values. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/21b5a4acfb96bae9838100683d5b99e6.png)
 
@@ -245,18 +180,11 @@ that information later.
 
 ![](/media/d170f9c106c16175d34f20fdaa0f8970.png)
 
-**6. Text Code**
+**6. Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 31：IR Control Sound and
-LED. You can move the code to anywhere, for example, we can save the
-code in the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 31：IR Control Sound and LED. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-31：IR Control Sound and LED”. Select“irrecvdata.py”，right-click and
-select“Upload to /”,waiting for the“irrecvdata.py”to be uploaded to the
-Raspberry Pi Pico. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 31：IR Control Sound and LED”. Select“irrecvdata.py”，right-click and select“Upload to /”,waiting for the“irrecvdata.py”to be uploaded to the Raspberry Pi Pico. And double left-click
 the“Project\_31.2\_IR\_Control\_Sound\_And\_LED.py”.
 
 ![](/media/625d2d78fea3b176c4dcfbf273f57610.png)
@@ -355,27 +283,16 @@ the“Project\_31.2\_IR\_Control\_Sound\_And\_LED.py”.
 
 7.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
 
 ![](/media/1da419a0aac36ad74e66e88fb75f7126.png)
 
-Click “Run current script”, the code starts executing, we will see
-that press buttons 1 to 7 on the infrared remote controller, we
-can hear buzzers such as do、re、mi、fa、sol、la、si ,etc. At the same time,
-the RGB will be red , green , blue , yellow , [magenta](javascript:;),
-blue and green, white respectively. However, if we press other buttons
-(except 1-7), the buzzer stops playing and the RGB goes off
-.  Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+Click “Run current script”, the code starts executing, we will see that press buttons 1 to 7 on the infrared remote controller, we can hear buzzers such as do、re、mi、fa、sol、la、si ,etc. At the same time, the RGB will be red , green , blue , yellow , [magenta](javascript:;), blue and green, white respectively. However, if we press other buttons(except 1-7), the buzzer stops playing and the RGB goes off.  Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/3223e7bc447feb52ba94c0f9addc0977.png)
 
-**Note**：When the code is running, the following prompt appears, you
-just need to click![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)“Stop/Restart backend”，then
-click![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”to make the code run
-again.
+**Note**：When the code is running, the following prompt appears, you just need to click![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)“Stop/Restart backend”，then click![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”to make the code run again.
 
 ![](/media/3f425db5cda9eb56bc1f29c27fa6696d.png)
 
-(Note: Before use, we need to remove the plastic sheet from the bottom
-of the infrared remote controller.)
+(Note: Before use, we need to remove the plastic sheet from the bottom of the infrared remote controller.)

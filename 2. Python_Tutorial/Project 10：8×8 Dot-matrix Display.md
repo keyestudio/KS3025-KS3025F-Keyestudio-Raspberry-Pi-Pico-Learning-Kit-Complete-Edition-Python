@@ -2,10 +2,7 @@
 
 1.  **Introduction**
 
-The dot-matrix display is an electronic digital display device that can
-show information on machines, clocks and many other devices. In this
-project, we will use the Raspberry Pi Pico to control the 8x8 LED dot
-matrix to light up.
+The dot-matrix display is an electronic digital display device that can show information on machines, clocks and many other devices. In this project, we will use the Raspberry Pi Pico to control the 8x8 LED dot matrix to light up.
 
 2.  **Components Required**
 
@@ -62,14 +59,7 @@ matrix to light up.
 
 **8\*8 Dot-matrix display module:**
 
-The 8\*8 dot matrix is composed of 64 LEDs, and each LED is placed at
-the intersection of a row and a column. When using a single-chip
-microcomputer to drive an 8\*8 dot matrix, we need to use a total of 16
-digital ports, which greatly wastes the data of the single-chip
-microcomputer. For this reason, we specially designed this module, using
-the HT16K33 chip to drive an 8\*8 dot matrix, and only need to use the
-I2C communication port of the single-chip microcomputer to control the
-dot matrix, which greatly saves the microcontroller resources.
+The 8\*8 dot matrix is composed of 64 LEDs, and each LED is placed at the intersection of a row and a column. When using a single-chip microcomputer to drive an 8\*8 dot matrix, we need to use a total of 16 digital ports, which greatly wastes the data of the single-chip microcomputer. For this reason, we specially designed this module, using the HT16K33 chip to drive an 8\*8 dot matrix, and only need to use the I2C communication port of the single-chip microcomputer to control the dot matrix, which greatly saves the microcontroller resources.
 
 ![](/media/69c719a7898907ab32f089f0cbbaff13.png)
 
@@ -77,18 +67,15 @@ dot matrix, which greatly saves the microcontroller resources.
 
 **4. Schematic diagram:**
 
+![Img](./media/Project%2010：8×8%20Dot-matrix%20Display.md/img-20231025164046.png)
+
 ![](/media/094a47e28b2c735ab475ede10c0deb43.png)
 
-**Test Code**
+**5. Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 10：8×8 Dot-matrix Display.
-You can move the code to anywhere, for example, we can save the code in
-the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 10：8×8 Dot-matrix Display. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny, click“This computer”→“D:”→“2. Python Projects”→“Project
-10：8×8 Dot-matrix Display”. And double left-click
+Open“Thonny, click“This computer”→“D:”→“2. Python Projects”→“Project 10：8×8 Dot-matrix Display”. And double left-click
 the“Project\_10\_8×8\_Dot\_Matrix\_Display.py”.
 
 ![](/media/33278d3cbc3b0cb185963a1d5e50e209.png)
@@ -167,17 +154,14 @@ the“Project\_10\_8×8\_Dot\_Matrix\_Display.py”.
 </tr>
 </tbody>
 </table>
+**6. Test Result**
 
-4.  **Test Result**
-    
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“Stop/Restart backend”.
-    
-    ![](/media/ec13ca4c27150f017b137bc4f29be85f.png)
-    
-    Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts
-    executing, we will see that the 8 x 8 dot matrix light up.
-    
-    Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
-    
-    ![](/media/4c6a34449ed88971e6d48c9b8fa201f7.png)
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
+
+![](/media/ec13ca4c27150f017b137bc4f29be85f.png)
+
+Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts executing, we will see that the 8 x 8 dot matrix light up.
+
+Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+
+![](/media/4c6a34449ed88971e6d48c9b8fa201f7.png)

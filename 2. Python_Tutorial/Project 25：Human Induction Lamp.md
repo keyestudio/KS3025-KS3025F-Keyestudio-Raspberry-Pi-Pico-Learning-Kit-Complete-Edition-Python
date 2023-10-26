@@ -1,16 +1,9 @@
-# Project 25：****Human Induction Lamp
+# Project 25：Human Induction Lamp
 
 1.  **Introduction**
     
-    With the development of science and technology, the use of human
-    induction lamp that usually used in the dark corridor area is very
-    common in our real life, such as the corridor of the community, the
-    bedroom of the room, the garage of the dungeon, the bathroom and so
-    on. The human induction lamp are generally composed of a PIR Motion
-    Sensor, a lamp, a photoresistor sensor and so on. In this project,
-    we will learn how to use a PIR Motion Sensor, LEDs, and a
-    photoresistor to make a human induction lamp .
-
+With the development of science and technology, the use of human induction lamp that usually used in the dark corridor area is very common in our real life, such as the corridor of the community, the bedroom of the room, the garage of the dungeon, the bathroom and so on. The human induction lamp are generally composed of a PIR Motion Sensor, a lamp, a photoresistor sensor and so on. In this project, we will learn how to use a PIR Motion Sensor, LEDs, and a photoresistor to make a human induction lamp .
+    
 2.  **Components Required**
 
 <table>
@@ -56,17 +49,12 @@
 
 ![](/media/643c9552a922ed3ddde80be42481481d.png)
 
-4.  **Text Code**
+4.  **Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 25：Human Induction Lamp.
-You can move the code to anywhere, for example, we can save the code in
-theDisk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 25：Human Induction Lamp. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-25：Human Induction Lamp”. And double left-click
-the“Project\_25\_Human\_ Induction\_Lamp.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 25：Human Induction Lamp”. And double left-click
+the “Project\_25\_Human\_ Induction\_Lamp.py”.
 
 ![](/media/810cf76703d01a67fb24892be056ea26.png)
 
@@ -128,24 +116,13 @@ the“Project\_25\_Human\_ Induction\_Lamp.py”.
 
 5.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“Stop/Restart backend”.
+    Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
     
     ![](/media/5328e0e2f11967549f347f7719420f02.png)
 
-Click “Run current script”, the code starts executing, we will see that
-When your hand covers the light-sensitive part of the photoresistor to
-simulate darkness, the Raspberry Pi Pico's built-in LED will light up.
-Then shake it in front of the PIR motion sensor with your other hand,
-the external LED will light up, too, and after a delay of a few seconds,
-the external LED will automatically turn off.  
+Click “Run current script”, the code starts executing, we will see that when your hand covers the light-sensitive part of the photoresistor to simulate darkness, the Raspberry Pi Pico's built-in LED will light up. Then shake it in front of the PIR motion sensor with your other hand, the external LED will light up, too, and after a delay of a few seconds, the external LED will automatically turn off.  
 
-At the same time, the "Shell" window of Thonny IDE will print the delay
-time when the external LED lights up . If the sensitive part of the
-photoresistor is not covered, you can see that the the Raspberry Pi
-Pico's built-in LED lights go out , at this time, shake in front of the
-PIR motion sensor with your hand, the external LED is off.
-Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+At the same time, the "Shell" window of Thonny IDE will print the delay time when the external LED lights up . If the sensitive part of the photoresistor is not covered, you can see that the the Raspberry Pi Pico's built-in LED lights go out , at this time, shake in front of the PIR motion sensor with your hand, the external LED is off. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/1694a3ff1f0fd065862961ebde40c063.png)
 

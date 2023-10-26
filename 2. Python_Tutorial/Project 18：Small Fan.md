@@ -2,9 +2,7 @@
 
 1.  **Introduction**
 
-In the hot summer, we need an electric fan to cool us down, so in this
-project, we will use a Raspberry Pi Pico to control 130 motor module and
-small blade to make a small fan.
+In the hot summer, we need an electric fan to cool us down, so in this project, we will use a Raspberry Pi Pico to control 130 motor module and small blade to make a small fan.
 
 2.  **Component Knowledge**
 
@@ -51,22 +49,13 @@ small blade to make a small fan.
 
 **L293D Chip：**
 
-L293D is a direct current drive IC, which can be used to drive DC motor
-or stepper motor in some robot projects.
+L293D is a direct current drive IC, which can be used to drive DC motor or stepper motor in some robot projects.
 
-It has a total of 16 pins and can drive two-channel DC motors at the
-same time.
+It has a total of 16 pins and can drive two-channel DC motors at the same time.
 
-Its Input voltage range is 4.5 V \~ 36 V, the output current of per
-channel is MAX 600mA, which can drive inductive loads. What’s more, its
-input end can be directly connected and controlled by the single-chip
-microcomputer.
+Its Input voltage range is 4.5 V \~ 36 V, the output current of per channel is MAX 600mA, which can drive inductive loads. What’s more, its input end can be directly connected and controlled by the single-chip microcomputer.
 
-When driving a small DC motor, the control of two-channel motors and the
-forward and reverse rotation can be realized by changing the high and
-low level of the input terminal. There are many motor drive boards using
-L293D chips on the market, of course, we can also use it via simply
-connecting.
+When driving a small DC motor, the control of two-channel motors and the forward and reverse rotation can be realized by changing the high and low level of the input terminal. There are many motor drive boards using L293D chips on the market, of course, we can also use it via simply connecting.
 
 **L293D Pin out：**
 
@@ -168,16 +157,11 @@ connecting.
 
 ![](/media/5d8dc14f86142189160f2c30f4641bb8.png)
 
-5.  **Text Code**
+5.  **Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 18：Small Fan. You can move
-the code to anywhere, for example, we can save the code in the Disk(D),
-the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 18：Small Fan. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-18：Small Fan”. And double left-click the“Project\_18\_ Small\_Fan.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 18：Small Fan”. And double left-click the“Project\_18\_ Small\_Fan.py”.
 
 ![](/media/9ba3903c9727ec2f3bf6061a79114c19.png)
 
@@ -225,16 +209,10 @@ Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”
 
 6.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
+    Ensure that the Raspberry Pi Pico is connected to the computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
 
 ![](/media/1806ed926b45c6b1d7d0b8643f2b22bf.png)
 
-Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts
-executing, we will see that The small fan turns counterclockwise for 5
-seconds and stops for 2 seconds, and then turns clockwise for 5 seconds
-and stops for 2 seconds. Repeat this rule for 5 times and then the small
-fan stops. Press“Ctrl+C”or click“Stop/Restart backend”to exit the
+Click“![](/media/da852227207616ccd9aff28f19e02690.png)Run current script”, the code starts executing, we will see that The small fan turns counterclockwise for 5 seconds and stops for 2 seconds, and then turns clockwise for 5 seconds and stops for 2 seconds. Repeat this rule for 5 times and then the small fan stops. Press“Ctrl+C”or click“Stop/Restart backend”to exit the
 program.
 
-# ![](/media/2b0d6e736468ae337f52b36dfa2e7574.png)

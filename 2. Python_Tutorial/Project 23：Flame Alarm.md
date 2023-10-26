@@ -2,12 +2,8 @@
 
 1.  **Introduction**
     
-    Fire is a terrible thing and fire alarm systems are very useful in
-    houses, commercial buildings and factories. In this project, we will
-    use a Raspberry Pi Pico to control a flame sensor , a buzzer and
-    LEDs to make fire alarm devices, which is a meaningful maker
-    activity.
-
+Fire is a terrible thing and fire alarm systems are very useful in houses, commercial buildings and factories. In this project, we will use a Raspberry Pi Pico to control a flame sensor , a buzzer and LEDs to make fire alarm devices, which is a meaningful maker activity.
+    
 2.  **Components Required**
 
 <table>
@@ -45,43 +41,27 @@
 
 3.  **Component Knowledge**
     
-    ![](/media/a50ec3e38adf10643eafac8cb62bec8a.png)
+![Img](./media/Project%2023：Flame%20Alarm.md/img-20231025165217.png)
 
-**Flame Sensor**：The flame emits a certain degree of IR light, which is
-invisible to the human eye, but our flame sensor can detect it and alert
-the microcontroller. If the Raspberry Pi Pico has detected a fire, it
-has a specially designed infrared receiver to detect the flame, and then
-convert the flame brightness into a fluctuating level signal. The short
-pin of the receiving triode is negative pole and the other long pin is
-positive pole. We should connect the short pin (negative pole) to 5V and
-the long pin (positive pole) to the analog pin, a resistor and GND. As
-shown in the figure below.
+
+**Flame Sensor**：The flame emits a certain degree of IR light, which is invisible to the human eye, but our flame sensor can detect it and alert the microcontroller. If the Raspberry Pi Pico has detected a fire, it has a specially designed infrared receiver to detect the flame, and then convert the flame brightness into a fluctuating level signal. The short pin of the receiving triode is negative pole and the other long pin is positive pole. We should connect the short pin (negative pole) to 5V and the long pin (positive pole) to the analog pin, a resistor and GND. As shown in the figure below.
 
 ![](/media/87bd204db523c602c80745266c1ee452.png)
 
-Note: Since vulnerable to radio frequency radiation and temperature
-changes, the flame sensor should be kept away from heat sources like
-radiators, heaters and air conditioners, as well as direct irradiation
-of sunlight, headlights and incandescent light.
+Note: Since vulnerable to radio frequency radiation and temperature changes, the flame sensor should be kept away from heat sources like radiators, heaters and air conditioners, as well as direct irradiation of sunlight, headlights and incandescent light.
 
 4.  **Read the Simulation Value**
 
-We start with a simple code to read the value of the flame sensor and
-print it on the serial monitor. For wiring, please refer to the
+We start with a simple code to read the value of the flame sensor and print it on the serial monitor. For wiring, please refer to the
 following wiring diagram.
 
 ![](/media/85531078db041bba05599b3a1118a7bc.png)
 
 ![](/media/1e3c424f7cc7ac797ab0b8ae4a00f4f1.png)
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 23：Flame Alarm. You can
-move the code to anywhere, for example, we can save the code in the
-Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 23：Flame Alarm. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-23：Flame Alarm”. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 23：Flame Alarm”. And double left-click
 the“Project\_23.1\_Read\_Analog\_Value\_Of\_Flame\_Sensor.py”.
 
 ![](/media/1022a0e91bbb58b2ef61716f04ac94c5.png)
@@ -105,16 +85,11 @@ the“Project\_23.1\_Read\_Analog\_Value\_Of\_Flame\_Sensor.py”.
 </tbody>
 </table>
 
-Ensure that the Raspberry Pi Pico is connected to the
-computer，click“Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
 
-# ![](/media/a40d1d4a894ceac4d3aee3e20dae54a4.png)
 
-Click “Run current script”, the code starts executing, we will see that
-the "Shell" window of Thonny IDE will print the simulation value read by
-the flame sensor. When the flame is close to the sensor, the simulation
-value increases. On the contrary, the simulated value decreases.
-Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+
+Click “Run current script”, the code starts executing, we will see that the "Shell" window of Thonny IDE will print the simulation value read by the flame sensor. When the flame is close to the sensor, the simulation value increases. On the contrary, the simulated value decreases. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/c3b2a4122662e655eb45e32937732991.png)
 
@@ -122,26 +97,17 @@ Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 5.  **Circuit Diagram and Wiring Diagram**
 
-Next, we will use a flame sensor, a buzzer, and LEDs to make an
-interesting project, that is flame alarm. When flame is detected, the
-LED flashes and the buzzer alarms.
+Next, we will use a flame sensor, a buzzer, and LEDs to make an interesting project, that is flame alarm. When flame is detected, the LED flashes and the buzzer alarms.
 
 ![](/media/c2b7feb8039e618ba070a9714ef06554.png)
 
 ![](/media/0cd1ee17a6f8de81464817090c5832eb.png)
 
-6.  **Text Code**（Note：![](/media/40a3ea572836945268b22dfc0cce29c3.png) The threshold of 500 in
-    the code can be reset itself as required）
+6.  **Test Code**（Note：![](/media/40a3ea572836945268b22dfc0cce29c3.png) The threshold of 500 in the code can be reset itself as required)
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 23：Flame Alarm. You can
-move the code to anywhere, for example, we can save the code in the
-Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 23：Flame Alarm. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-23：Flame Alarm”. And double left-click
-the“Project\_23.2\_Flame\_Alarm.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 23：Flame Alarm”. And double left-click the “Project\_23.2\_Flame\_Alarm.py”.
 
 ![](/media/e2d832ba9e809f04f0990d9df446acf6.png)
 
@@ -177,17 +143,12 @@ the“Project\_23.2\_Flame\_Alarm.py”.
 </tbody>
 </table>
 
-7.  **Text Result**
+7.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“Stop/Restart backend”.
+    Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
     
     ![](/media/5197b36be26f10de1b40e5c814974ab3.png)
     
-    Click “Run current script”, the code starts executing, we will see
-    that when the flame sensor detects the flame, the LED flashes and
-    the buzzer alarms. Otherwise, the LED does not light, the buzzer
-    does not sound. Press“Ctrl+C”or click“Stop/Restart backend”to exit
-    the program.
+    Click “Run current script”, the code starts executing, we will see that when the flame sensor detects the flame, the LED flashes and the buzzer alarms. Otherwise, the LED does not light, the buzzer does not sound. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/536af226e9ed390ca3cc102b0f02f9cb.png)

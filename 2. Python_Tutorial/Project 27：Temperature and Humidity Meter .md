@@ -2,14 +2,7 @@
 
 1.  **Introduction**
 
-In winter, the humidity in the air is very low, that is, the air is very
-dry. Coupled with the cold, the human skin is prone to crack from
-excessive dryness. Therefore, you need to use a humidifier to increase
-the humidity of the air at home. But how do you know that the air is too
-dry? Then you need equipment to detect air humidity. In this lesson, we
-will learn how to use the temperature and humidity sensor. We use the
-sensor to create a thermohygrometer and also combined with an
-LCD\_128X32\_DOT to display the temperature and humidity values.
+In winter, the humidity in the air is very low, that is, the air is very dry. Coupled with the cold, the human skin is prone to crack from excessive dryness. Therefore, you need to use a humidifier to increase the humidity of the air at home. But how do you know that the air is too dry? Then you need equipment to detect air humidity. In this lesson, we will learn how to use the temperature and humidity sensor. We use the sensor to create a thermohygrometer and also combined with an LCD\_128X32\_DOT to display the temperature and humidity values.
 
 2.  **Components Required**
 
@@ -40,24 +33,14 @@ LCD\_128X32\_DOT to display the temperature and humidity values.
 
 3.  **Component Knowledge**
 
-![](/media/34bafe8113e2db36c8f0c8492b835474.png)
+![Img](./media/Project%2027：Temperature%20and%20Humidity%20Meter .md/img-20231025165511.png)
 
-**Temperature and Humidity Sensor:** It is a temperature and humidity
-composite sensor with calibrated digital signal output. Its accuracy
-humidity is ±5%RH, temperature is ±2℃. Range humidity is 20 to 90%RH,
-and temperature is 0 to 50℃. The temperature and humidity sensor applies
-dedicated digital module acquisition technology and temperature and
-humidity sensing technology to ensure extremely high reliability and
-excellent long-term stability of the product. The temperature and
-humidity sensor includes a resistive-type humidity measurement and an
-NTC temperature measurement component, which is very suitable for
-temperature and humidity measurement applications where accuracy and
-real-time performance are not required.
+
+**Temperature and Humidity Sensor:** It is a temperature and humidity composite sensor with calibrated digital signal output. Its accuracy humidity is ±5%RH, temperature is ±2℃. Range humidity is 20 to 90%RH, and temperature is 0 to 50℃. The temperature and humidity sensor applies dedicated digital module acquisition technology and temperature and humidity sensing technology to ensure extremely high reliability and excellent long-term stability of the product. The temperature and humidity sensor includes a resistive-type humidity measurement and an NTC temperature measurement component, which is very suitable for temperature and humidity measurement applications where accuracy and real-time performance are not required.
 
 The operating voltage is in the range of 3.3V to 5.5V.
 
-XHT11 has three pins, which are VCC, GND, and S. S is the pin for data
-output, using serial communication.
+XHT11 has three pins, which are VCC, GND, and S. S is the pin for data output, using serial communication.
 
 **Single bus format definition:**
 
@@ -92,20 +75,13 @@ output, using serial communication.
 
 **Data sequence diagram:**
 
-When MCU sends a start signal, XHT11 changes from the
-low-power-consumption mode to the high-speed mode, waiting for MCU
-completing the start signal. Once it is completed, XHT11 sends a
-response signal of 40-bit data and triggers a signal acquisition. The
-signal is sent as shown in the figure.
+When MCU sends a start signal, XHT11 changes from the low-power-consumption mode to the high-speed mode, waiting for MCU completing the start signal. Once it is completed, XHT11 sends a response signal of 40-bit data and triggers a signal acquisition. The signal is sent as shown in the figure.
 
 ![](/media/933ac5e5a5e921d4b16c7c48091ba75a.png)
 
 Combined with the code, you can understand better.
 
-The XHT11 temperature and humidity sensor can easily add temperature and
-humidity data to your DIY electronic projects. It is perfect for remote
-weather stations, home environmental control systems, and farm or garden
-monitoring systems.
+The XHT11 temperature and humidity sensor can easily add temperature and humidity data to your DIY electronic projects. It is perfect for remote weather stations, home environmental control systems, and farm or garden monitoring systems.
 
 **Specification:**
 
@@ -119,7 +95,8 @@ Digital interface
 
 **Schematic diagram:**
 
-![](/media/53fa034cbbcec22579b2bdf8252c90cd.emf)
+![Img](./media/Project%2027：Temperature%20and%20Humidity%20Meter .md/img-20231025165613.png)
+
 
 4.  **Read the Value**
 
@@ -127,17 +104,10 @@ Digital interface
 
 ![](/media/751a9a67b2657cac8dfaddf451e7b74a.png)
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 27：Temperature Humidity
-Meter. You can move the code to anywhere, for example, we can save the
-code in the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 27：Temperature Humidity Meter. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-27：Temperature Humidity Meter”. Select“dht11.py”， right-click and
-select“Upload to /”，waiting for the “dht11.py”to be uploaded to the
-Raspberry Pi Pico. And double left-click
-the“Project\_27.1\_Detect\_Temperature\_Humidity.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 27：Temperature Humidity Meter”. Select“dht11.py”， right-click and select“Upload to /”，waiting for the “dht11.py”to be uploaded to the Raspberry Pi Pico. And double left-click
+the “Project\_27.1\_Detect\_Temperature\_Humidity.py”.
 
 ![](/media/a0ccf379fa67fbed0c913c0371fa77f0.png)
 
@@ -166,15 +136,11 @@ the“Project\_27.1\_Detect\_Temperature\_Humidity.py”.
 </tbody>
 </table>
 
-Ensure that the Raspberry Pi Pico is connected to the
-computer，click“Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
 
 ![](/media/d426b2434284ed29f968c706c72bd9bd.png)
 
-Click “Run current script”, the code starts executing, we will see that
-the "Shell" window of Thonny IDE will print the temperature and humidity
-data in the current surroundings, as shown in the following figure.
-Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
+Click “Run current script”, the code starts executing, we will see that the "Shell" window of Thonny IDE will print the temperature and humidity data in the current surroundings, as shown in the following figure. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/e2a146197e62788c2ae4e0974d491636.png)
 
@@ -182,32 +148,19 @@ Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 5.  **Circuit Diagram and Wiring Diagram**
 
-Now we start printing the value of the XHT11 temperature and humidity
-sensor with LCD screen. We will see the corresponding values on the LCD
-screen. Let's get started with this project. Please follow the wiring
-diagram below.
+Now we start printing the value of the XHT11 temperature and humidity sensor with LCD screen. We will see the corresponding values on the LCD screen. Let's get started with this project. Please follow the wiring diagram below.
 
-Note: LCD\_128X32\_DOT must be connected with 10CM M-F Dupont wires, the
-LCD\_128X32\_DOT will display normally;  Otherwise, using a 20CM M-F
-Dupont wire may cause the LCD\_128X32\_DOT display abnormally.  
+Note: LCD\_128X32\_DOT must be connected with 10CM M-F Dupont wires, the LCD\_128X32\_DOT will display normally;  Otherwise, using a 20CM M-F Dupont wire may cause the LCD\_128X32\_DOT display abnormally.  
 
 ![](/media/d78889590f1945eec0125ee7dc250d73.png)
 
 ![](/media/78cb8eb87aa36af901a7a839fbf7eb10.png)
 
-6.  **Text Code**
+6.  **Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 27：Temperature Humidity
-Meter. You can move the code to anywhere, for example, we can save the
-code in the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 27：Temperature Humidity Meter. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-27：Temperature Humidity Meter”. Select“dht11.py”,“lcd128\_32.py”and
-“lcd128\_32\_fonts.py”，right-click and select“Upload to /”，waiting for
-the“dht11.py”，“lcd128\_32.py”and“lcd128\_32\_fonts.py”to be uploaded to
-the Raspberry Pi Pico. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 27：Temperature Humidity Meter”. Select“dht11.py”,“lcd128\_32.py”and “lcd128\_32\_fonts.py”，right-click and select“Upload to /”，waiting for the “dht11.py”，“lcd128\_32.py”and“lcd128\_32\_fonts.py”to be uploaded to the Raspberry Pi Pico. And double left-click
 the“Project\_27.2\_Temperature\_Humidity\_Meter.py”.
 
 ![](/media/002eae5eea81390afa635216fd6db7a0.png)
@@ -277,14 +230,10 @@ the“Project\_27.2\_Temperature\_Humidity\_Meter.py”.
 
 7.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“Stop/Restart backend”.
     
-    ![](/media/2a459a949dd40a39800a330e24e6954d.png)
+![](/media/2a459a949dd40a39800a330e24e6954d.png)
     
-    Click“Run current script”, the code starts executing, we will see
-    that the LCD\_128X32\_DOT will display temperature and humidity in
-    the current environment. Press“Ctrl+C”or click“Stop/Restart
-    backend”to exit the program.
+Click“Run current script”, the code starts executing, we will see that the LCD\_128X32\_DOT will display temperature and humidity in the current environment. Press“Ctrl+C”or click“Stop/Restart backend”to exit the program.
 
 ![](/media/c111c9792f82a28dfff034ee715ed9fb.png)

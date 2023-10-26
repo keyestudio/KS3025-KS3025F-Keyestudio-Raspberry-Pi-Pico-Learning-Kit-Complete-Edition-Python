@@ -2,13 +2,8 @@
 
 1.  **Introduction**
 
-PIR motion sensor measures the thermal infrared (IR) light emitted by
-moving objects. The sensor can detect the movement of people, animals,
-and cars to trigger safety alarms and lighting. They are used to detect
-movement and ideal for security such as burglar alarms and security
-lighting systems. In this project, we will use a Raspberry Pi Pico to
-control PIR motion sensor, buzzers and LEDs to simulate burglar alarms.
- 
+PIR motion sensor measures the thermal infrared (IR) light emitted by moving objects. The sensor can detect the movement of people, animals, and cars to trigger safety alarms and lighting. They are used to detect movement and ideal for security such as burglar alarms and security lighting systems. In this project, we will use a Raspberry Pi Pico to control PIR motion sensor, buzzers and LEDs to simulate burglar alarms.
+
 
 2.  **Components Required**
 
@@ -47,22 +42,11 @@ control PIR motion sensor, buzzers and LEDs to simulate burglar alarms.
 
 3.  **Component Knowledge**
 
-**PIR motion sensor:** The principle is that when certain crystals, such
-as lithium tantalate and triglyceride sulfate, are heated, the two ends
-of the crystal will generate an equal number of charges with opposite
-signs. These charges can be converted into voltage output by an
-amplifier. And the human body will release infrared light, although
-relatively weak, but still can be detected. When the PIR motion sensor
-detects the movement of a nearby person, the sensor signal terminal
-outputs a high level 1. Otherwise, it outputs a low level 0. Pay special
-attention that this sensor can detect people, animals and cars in
-motion. People, animals and cars at rest cannot be detected. The maximum
-detection distance is about 7 meters.
+**PIR motion sensor:** The principle is that when certain crystals, such as lithium tantalate and triglyceride sulfate, are heated, the two ends of the crystal will generate an equal number of charges with opposite signs. These charges can be converted into voltage output by an amplifier. And the human body will release infrared light, although relatively weak, but still can be detected. 
 
-**Note:** Since vulnerable to radio frequency radiation and temperature
-changes, the PIR motion sensor should be kept away from heat sources
-like radiators, heaters and air conditioners, as well as direct
-irradiation of sunlight, headlights and incandescent light.
+When the PIR motion sensor detects the movement of a nearby person, the sensor signal terminal outputs a high level 1. Otherwise, it outputs a low level 0. Pay special attention that this sensor can detect people, animals and cars in motion. People, animals and cars at rest cannot be detected. The maximum detection distance is about 7 meters.
+
+**Note:** Since vulnerable to radio frequency radiation and temperature changes, the PIR motion sensor should be kept away from heat sources like radiators, heaters and air conditioners, as well as direct irradiation of sunlight, headlights and incandescent light.
 
 **Features:**
 
@@ -98,14 +82,9 @@ Pin limiting current: 50MA
 
 **5.Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 16：Burglar Alarm. You can
-move the code to anywhere, for example, we can save the code in the
-Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 16：Burglar Alarm. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-16：Burglar Alarm”. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 16：Burglar Alarm”. And double left-click
 the“Project\_16\_Burglar\_Alarm.py”.
 
 ![](/media/7f73cbbb7625a6a44b48265d65a3c61d.png)
@@ -134,16 +113,10 @@ the“Project\_16\_Burglar\_Alarm.py”.
 
 6.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
+    Ensure that the Raspberry Pi Pico is connected to the computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
 
 ![](/media/e14873ab851f66c6e90699457100c992.png)
 
-Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts
-executing, we will see that If the PIR motion sensor detects someone
-nearby, the buzzer will give an alarm and the LEDs will flash
-continuously. At the same time, the "Shell" window of the Thonny IDE
-will print the string "ALARM\! Motion detected\!" Press“Ctrl+C”or
-click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to exit the program.
+Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts executing, we will see that If the PIR motion sensor detects someone nearby, the buzzer will give an alarm and the LEDs will flash continuously. At the same time, the "Shell" window of the Thonny IDE will print the string "ALARM\! Motion detected\!" Press“Ctrl+C”or click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to exit the program.
 
 ![](/media/7883b057dfdf98de0af0bdc02012d93f.png)

@@ -2,10 +2,7 @@
 
 1.  **Introduction**
 
-In our daily life, we can see many billboards made up of different
-colors of LED. They constantly change the light to attract the attention
-of customers. In this project, we will use Raspberry Pi Pico to control
-10 LEDs to achieve the effect of flowing water.
+In our daily life, we can see many billboards made up of different colors of LED. They constantly change the light to attract the attention of customers. In this project, we will use Raspberry Pi Pico to control 10 LEDs to achieve the effect of flowing water.
 
 2.  **Components Required**
 
@@ -42,7 +39,7 @@ of customers. In this project, we will use Raspberry Pi Pico to control
 
 3.  **Circuit Diagram and Wiring Diagram**
 
-# ![](/media/e6f92039d131685369db2d1ac2c30267.png)
+![Img](./media/Project%2007%20Flowing%20Water%20Light.md/img-20231025163517.png)
 
 ![](/media/fc6e73a6664012c9a33262b50d6e256f.png)
 
@@ -58,20 +55,11 @@ How to identify the 220Ω 5-band resistor
 
 4.  **Test Code**
 
-This project is to design and manufacture a flowing water light.  Here
-are the steps: first , turn on LED \#1, then turn it off.  Second, turn
-on LED \#2, then turn off... . Do the same for the 10 LEDs until the
-last one is turned off.  Repeating the process to achieve the "movement"
-of the water.
+This project is to design and manufacture a flowing water light.  Here are the steps: first , turn on LED \#1, then turn it off.  Second, turn on LED \#2, then turn off... . Do the same for the 10 LEDs until the last one is turned off. Repeating the process to achieve the "movement" of the water.
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 07：Flowing Water Light.
-You can move the code to anywhere, for example, we can save the code in
-the Disk(D), the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 07：Flowing Water Light. You can move the code to anywhere, for example, we can save the code in the Disk(D), the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-07：Flowing Water Light”. And double left-click
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 07：Flowing Water Light”. And double left-click
 the“Project\_07\_Flowing\_Water\_Light.py”.
 
 ![](/media/a923fafe77f629ea8288ec40b52a6059.png)
@@ -107,17 +95,13 @@ the“Project\_07\_Flowing\_Water\_Light.py”.
 
 5.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
+Ensure that the Raspberry Pi Pico is connected to the computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
     
-    ![](/media/b908750521d4d2b64c55751825916a7e.png)
+![](/media/b908750521d4d2b64c55751825916a7e.png)
     
-    Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts
-    executing, we will see that the 10 LEDs will light up from left to
-    right and then return from right to left. Press“Ctrl+C”or
-    click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to exit the
-    program.
+Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts executing, we will see that the 10 LEDs will light up from left to right and then return from right to left. Press“Ctrl+C”or click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to exit the program.
 
 ![](/media/c9814fae261b7f8c9d2b33938d8e6144.png)
 
-![](/media/912e2c3f88b522b89b9935548bae3bd9.png)
+
+![Img](./media/Project%2007%20Flowing%20Water%20Light.md/img-20231025163603.png)

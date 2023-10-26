@@ -4,12 +4,7 @@
 
 ![](/media/94bdff69e438989d8e0934e57f2e5c00.png)
 
-RGB LEDS are made up of three colors (red, green, and blue) , which can
-emit different colors by mixing these three basic colors. In this
-project, we will introduce the RGB LED and show you how to use the
-Raspberry Pi Pico to control the RGB LED. Even though RGB LED is very
-basic, it is also a great way to learn the fundamentals of electronics
-and coding.
+RGB LEDS are made up of three colors (red, green, and blue) , which can emit different colors by mixing these three basic colors. In this project, we will introduce the RGB LED and show you how to use the Raspberry Pi Pico to control the RGB LED. Even though RGB LED is very basic, it is also a great way to learn the fundamentals of electronics and coding.
 
 2.  **Components Required**
 
@@ -44,19 +39,14 @@ and coding.
 
 **3. Component Knowledge**
 
-The monitors mostly adopt the RGB color standard, and all the colors on
-the computer screen are composed of the three colors of red, green and
-blue mixed in different proportions.
+The monitors mostly adopt the RGB color standard, and all the colors on the computer screen are composed of the three colors of red, green and blue mixed in different proportions.
+![Img](./media/Project%2006%20RGB%20LED.md/img-20231025163331.png)
 
-![](/media/8bf1339719a922f2fbc1e01a4347b4ab.png)
 
-This RGB LED has 4 pins and a common cathode. To change its brightness,
-we can use the PWM of the Raspberry Pi Pico pins, which can give
-different duty cycle signals to the RGB LED to produce different colors.
 
-If we use three 10-bit PWM to control the RGBLED, theoretically we can
-create 210\*210\*210= 1,073,741,824(1 billion) colors through different
-combinations.
+This RGB LED has 4 pins and a common cathode. To change its brightness, we can use the PWM of the Raspberry Pi Pico pins, which can give different duty cycle signals to the RGB LED to produce different colors.
+
+If we use three 10-bit PWM to control the RGBLED, theoretically we can create 210\*210\*210= 1,073,741,824(1 billion) colors through different combinations.
 
 4.  **Circuit Diagram and Wiring Diagram**
 
@@ -76,14 +66,9 @@ How to identify the 220Ω 5-band resistor
 
 5.  **Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 06：RGB LED. You can move
-the code to anywhere, for example, we can save the code in the Disk(D,
-the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 06：RGB LED. You can move the code to anywhere, for example, we can save the code in the Disk(D, the route is D:\\2. Python Projects.
 
-Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project
-06：RGB LED”. And double left-click the“Project\_06\_RGB\_LED.py”.
+Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”→“Project 06：RGB LED”. And double left-click the“Project\_06\_RGB\_LED.py”.
 
 ![](/media/4d197d2ef390d93cbdcd6606fa754188.png)
 
@@ -125,14 +110,10 @@ Open“Thonny”, click“This computer”→“D:”→“2. Python Projects”
 
 6.  **Test Result**
     
-    Ensure that the Raspberry Pi Pico is connected to the
-    computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
+    Ensure that the Raspberry Pi Pico is connected to the computer，click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”.
     
     ![](/media/a2b85aea8a2bd67ad184662be36a1c9e.png)
 
-Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts
-executing, we will see that RGB LED starts showing random colors.
-Press“Ctrl+C”or click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to
-exit the program.
+Click ![](/media/da852227207616ccd9aff28f19e02690.png)“Run current script”, the code starts executing, we will see that RGB LED starts showing random colors. Press“Ctrl+C”or click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)Stop/Restart backend”to exit the program.
 
 ![](/media/296bcab9a2eaccf483b8cb9e8b8a0e43.png)

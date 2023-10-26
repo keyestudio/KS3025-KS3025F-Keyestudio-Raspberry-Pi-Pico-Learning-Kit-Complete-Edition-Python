@@ -2,11 +2,7 @@
 
 1.  **Introduction**
 
-Traffic lights are closely related to people's daily lives, which
-generally show red, yellow, and green. Everyone should obey the traffic
-rules, which can avoid many traffic accidents. In this project, we will
-use Raspberry Pi Pico and some LEDs (red, green and yellow) to simulate
-the traffic lights.
+Traffic lights are closely related to people's daily lives, which generally show red, yellow, and green. Everyone should obey the traffic rules, which can avoid many traffic accidents. In this project, we will use Raspberry Pi Pico and some LEDs (red, green and yellow) to simulate the traffic lights.
 
 2.  **Components Required**
 
@@ -63,14 +59,9 @@ How to identify the 220Ω 5-band resistor
 
 4.  **Test Code**
 
-The code used in this project is saved in the file KS3025 Keyestudio
-Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.
-Python\_Tutorial\\2. Python Projects\\Project 05:Traffic Lights. You can
-move the code to anywhere, for example, we can save the code in the
-Disk(D, the route is D:\\2. Python Projects.
+The code used in this project is saved in the file KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition\\2. Windows System\\1.Python\_Tutorial\\2. Python Projects\\Project 05:Traffic Lights. You can move the code to anywhere, for example, we can save the code in the Disk(D, the route is D:\\2. Python Projects.
 
-Open“Thonny, click“This computer”→“D:”→“2. Python Projects”→"Project 05:
-Traffic Lights”. And double-click“Project\_05\_Traffic\_Lights.py”.
+Open“Thonny, click“This computer”→“D:”→“2. Python Projects”→"Project 05: Traffic Lights”. And double-click“Project\_05\_Traffic\_Lights.py”.
 
 ![](/media/23e79112920bc111a9bc621dc75162a0.png)
 
@@ -105,15 +96,13 @@ Traffic Lights”. And double-click“Project\_05\_Traffic\_Lights.py”.
 </tbody>
 </table>
 
-**Test Result：**
+**5. Test Result：**
 
-Connect the pico board to the computer. Click![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png) to
-check the Shell
+Connect the pico board to the computer. Click![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png) to check the Shell.
 
 ![](/media/914349b7c46f99b24beaada57db00815.png)
 
-Click“![](/media/da852227207616ccd9aff28f19e02690.png)”, the code starts executing, what we will
-see are below:
+Click“![](/media/da852227207616ccd9aff28f19e02690.png)”, the code starts executing, what we will see are below:
 
 1.  First, the green light will be on for 5 seconds and then off; 
 
@@ -121,7 +110,6 @@ see are below:
 
 3.  Then, the red light goes on for five seconds and then goes off. 
     
-    Repeat steps 1 to 3 above and press“Ctrl+C”or
-    click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)” to exit the program.
+    Repeat steps 1 to 3 above and press“Ctrl+C”or click“![](/media/27451c8a9c13e29d02bc0f5831cfaf1f.png)” to exit the program.
 
 ![](/media/ff8674d60cc99a8c3bbef24bf65ae20c.png)
