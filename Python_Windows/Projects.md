@@ -8,7 +8,7 @@
 * [Project 06：RGB LED](2.Projects/Project%2006%EF%BC%9ARGB%20LED.md)
 * [Project 07：Flowing Water Light](2.Projects/Project%2007%EF%BC%9AFlowing%20Water%20Light.md)
 * [Project 08：1-Digit Digital Tube](2.Projects/Project%2008%EF%BC%9A1-Digit%20Digital%20Tube.md)
-* [Project 09：4-digit Digital Tube](2.Projects/Project%2009%EF%BC%9A4-digit%20Digital%20Tube.md)
+* [Project 09：4-digit Digital Tube](2.Projects/Project%2009%EF%BC%9A4-Digit%20Digital%20Tube.md)
 * [Project 10：8×8 Dot-matrix Display](2.Projects/Project%2010%EF%BC%9A8×8%20Dot-matrix%20Display.md)
 * [Project 11：74HC595N Control 8 LEDs](2.Projects/Project%2011%EF%BC%9A74HC595N%20Control%208%20LEDs.md)
 * [Project 12：Active Buzzer](2.Projects/Project%2012%EF%BC%9AActive%20Buzzer.md)

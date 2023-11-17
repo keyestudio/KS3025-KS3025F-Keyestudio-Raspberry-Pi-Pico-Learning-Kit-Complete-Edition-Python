@@ -1,7 +1,7 @@
 # Projects
 
 * [Project 01：Hello World](2.Projects/Project%2001%EF%BC%9AHello%20World.md)
-* [Project 02：Onboard LED Flashing](2.Projects/Project%2002%EF%BC%9AOnboard%20LED%20Flashing.md)
+* [Project 02：Onboard LED Flashing](2.Projects/Project%2002%EF%BC%9AOnboard%20LED%20flashing.md)
 * [Project 03：External LED flashing](2.Projects/Project%2003%EF%BC%9AExternal%20LED%20flashing.md)
 * [Project 04：Breathing Led](2.Projects/Project%2004%EF%BC%9ABreathing%20Led.md)
 * [Project 05：Traffic Lights](2.Projects/Project%2005%EF%BC%9ATraffic%20Lights.md)
