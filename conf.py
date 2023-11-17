@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'KS3025 (KS3025F) Keyestudio Raspberry Pi Pico Learning Kit Complete Edition Python'
+project = 'Raspberry Pi Pico Learning Kit'
 copyright = 'keyestudio , WiKi'
 author = 'keyestudio WiKi'
 
