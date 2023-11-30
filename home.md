@@ -1,5 +1,5 @@
 
-# Keyestudio Raspberry Pi Pico Learning Kit Complete Edition
+# KS3025 Keyestudio Raspberry Pi Pico Learning Kit Complete Edition
 
 ![Img](./media/img-20231101152610.jpg)
 
