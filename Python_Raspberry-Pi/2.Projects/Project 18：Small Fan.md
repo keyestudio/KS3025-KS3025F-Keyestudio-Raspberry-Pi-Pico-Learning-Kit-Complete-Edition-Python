@@ -16,7 +16,7 @@ In the hot summer, we need an electric fan to cool us down, so in this project, 
 </tr>
 <tr class="even">
 <td>Raspberry Pi Pico*1</td>
-<td>Raspberry Pi Pico扩展板*1</td>
+<td>Raspberry Pi Pico shield*1</td>
 <td>Jumper Wore</td>
 <td>USB Cable*1</td>
 </tr>
